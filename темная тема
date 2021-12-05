@@ -1,0 +1,55 @@
+<html>
+
+<head>
+
+
+<title>темная тема</title>
+
+
+		<style>
+			#light{
+				display: block; 
+			}
+			#dark{
+				display: block;
+			}
+			#page{
+				background: black;
+				color: white;
+			}
+		</style>
+
+
+</head>
+	
+	<body id='page'>
+		<p>Это тестовая страничка</p>
+		
+		<button id='dark' onClick='setDarkTheme()' >
+			 Тёмная тема
+		</button>
+		
+		<button id='light' onClick='setLightTheme()' >
+			 Светлая тема
+		</button>
+	</body>
+
+
+
+	<script>
+		function setLightTheme(){
+			page.style.background = '#FFFFFF';
+			page.style.color = '#000000';
+			light.style.display = 'none';
+			dark.style.display = 'block';
+		}
+		
+		function setDarkTheme(){
+			page.style.background = '#000000';
+			page.style.color = '#FFFFFF';
+			light.style.display = 'block';
+			dark.style.display = 'none';
+			
+		}
+	</script>
+</html>
